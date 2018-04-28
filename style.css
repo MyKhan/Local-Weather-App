@@ -1,0 +1,135 @@
+*{
+  font-family: 'Lobster', cursive;
+  background-color: black;
+  color: white;
+}
+
+div {
+  margin: 10px auto;
+  text-align: center;
+}
+
+#div_weather-exlained {
+  border: 2px solid #F0F0F0;
+  border-radius: 20px;
+}
+
+#div_weather-exlained div  {
+  display: inline-block;
+  min-width: 150px;
+  padding: 5px;
+  border: 1px solid #F0F0F0;
+  border-radius: 5px;
+}
+
+#div_housing_weather_icon {
+  display: inline-block;
+}
+
+i {
+  font-size: 35px;
+}
+
+.for-sun {
+  animation-name: round-and-round-you-go;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes round-and-round-you-go {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+
+.for-clouds {
+  animation-name: side-to-side;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes side-to-side {
+0% {
+transform: translateX(-50px);
+}
+100% {
+transform: translateX(50px);
+}
+}
+
+
+.for-snow {
+  animation-name: big-and-small;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  font-size: 50px;
+}
+
+@keyframes big-and-small {
+0% {
+transform: scale(.75);
+}
+100% {
+transform: scale(1);
+}
+}
+
+.for-rain {
+  animation-name: down-it-comes;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes down-it-comes {
+0% {
+transform: translateY(0px);
+}
+100% {
+transform: translateY(40px);
+}
+}
+
+.for-moon {
+  animation-name: rockaby-baby;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes rockaby-baby {
+0% {
+transform: rotateZ(0deg);
+}
+100% {
+transform: rotateZ(-35deg);
+}
+}
+
+.for-hot {
+  animation-name: turn-around;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes turn-around {
+0% {
+transform: rotateY(0deg);
+}
+100% {
+transform: rotateY(180deg);
+}
+}
